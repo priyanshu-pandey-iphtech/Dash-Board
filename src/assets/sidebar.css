@@ -1,0 +1,121 @@
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    color: grey;
+    padding-top: 0px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    padding-left: 20px;
+    text-align: start;
+    font-weight: normal;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.sidebar ul li a {
+    color: grey;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar ul li:hover {
+    background-color: #f6f7ff;
+
+    border-radius: 5px;
+
+}
+
+.sidebar ul li:hover a {
+    color: grey;
+}
+
+.node-btn {
+    background-color: #3fcb9b;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    padding: 2px 5px;
+    text-align: end;
+    cursor: pointer;
+    margin-left: 100px;
+
+
+}
+
+.new-btn {
+    background-color: #fd5991;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    width: 30px;
+    height: 20px;
+    font-size: 9px;
+    padding: 2px 5px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 60px;
+
+}
+
+.sidebar ul li button {
+    align-self: flex-start;
+    margin-bottom: 0px;
+
+
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        left: -260px;
+        width: 260px;
+        height: 100vh;
+        background-color: #333;
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    .sidebar.open {
+        left: 0;
+
+    }
+
+    .menu-btn {
+        position: fixed;
+        top: 50px;
+        left: 0px;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+        z-index: 1100;
+    }
+}
